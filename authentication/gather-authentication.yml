@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/gather-http-api-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: apiKey
+  description: API key generated at https://gather.town/apiKeys, sent in the apiKey request
+    header. The associated user must have Admin or Builder permission on the target space.
+  sources:
+  - openapi/gather-http-api-openapi.yml
