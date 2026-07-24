@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Gather HTTP Guestlist Spaces API
+  version: '2.0'
+  description: The Gather HTTP API lets you read and write the map/room data of a Gather space and manage its email guestlist programmatically, enabling dynamically and programmatically generated maps. Authentication is via an API key generated at https://gather.town/apiKeys; the caller must have Admin or Builder permission on the space being modified. This description was reconstructed by the API Evangelist enrichment pipeline from Gather's official public documentation (Notion HTTP API reference) and the gathertown/api-examples repository — it captures the documented, verified operations and is not an official Gather OpenAPI document.
+  x-provenance:
+    generated: '2026-07-19'
+    method: derived
+    source:
+    - https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+    - https://github.com/gathertown/api-examples
+  contact:
+    name: Gather Support
+    url: https://support.gather.town/
+servers:
+- url: https://api.gather.town
+  description: Gather HTTP API
+security:
+- apiKey: []
+tags:
+- name: Spaces
+  description: Create and manage Gather spaces
+paths:
+  /api/v2/spaces:
+    post:
+      operationId: createSpace
+      summary: Create a space
+      description: Create a new Gather space, optionally cloning an existing space passed as sourceSpace. Requires an API key with sufficient permission.
+      tags:
+      - Spaces
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Display name for the new space.
+                sourceSpace:
+                  type: string
+                  description: Space ID to clone the new space from.
+              required:
+              - name
+      responses:
+        '200':
+          description: The created space identifier.
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+components:
+  responses:
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
+    Forbidden:
+      description: The API key lacks permission on the target space.
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: apiKey
+      description: API key generated at https://gather.town/apiKeys, sent in the apiKey request header. The associated user must have Admin or Builder permission on the target space.
