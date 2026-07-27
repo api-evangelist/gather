@@ -1,8 +1,18 @@
 aid: gather
 name: Gather
-description: 'Gather is a company surfaced as a portfolio company of index-ventures, true-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: future-of-work. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Gather (gather.town) is a video-calling platform that places people in a
+  navigable 2D virtual space, letting multiple groups hold separate
+  conversations in parallel and walk in and out of them as easily as they would
+  in real life. It is used for remote and hybrid offices, conferences, and
+  events. Gather exposes a public HTTP API for programmatically creating spaces
+  and reading/writing the map (room) data of a space, plus managing a space's
+  email guestlist, and a realtime WebSocket "game" API (via the official
+  @gathertown/gather-game-client SDK) for subscribing to player/movement/chat
+  events and driving avatars or bots. API keys are generated at
+  gather.town/apiKeys and require Admin or Builder permission on the target
+  space. Gather was surfaced as a portfolio company of Index Ventures and True
+  Ventures and enriched into the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/gather/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,18 +21,126 @@ x-backed-by:
 - true-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://app.gather.town/images/site/site_preview.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Future Of Work
-apis: []
+- Virtual Office
+- Video Conferencing
+- Collaboration
+- Metaverse
+- Remote Work
+- Events
+apis:
+- aid: gather:gather-guestlist-api
+  name: Gather Guestlist API
+  description: Manage the email guestlist (members/guests) of a space
+  humanURL: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+  baseURL: https://api.gather.town
+  tags:
+  - Guestlist
+  properties:
+  - type: OpenAPI
+    url: openapi/gather-guestlist-api-openapi.yml
+- aid: gather:gather-maps-api
+  name: Gather Maps API
+  description: Read and write the map/room data of a space
+  humanURL: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+  baseURL: https://api.gather.town
+  tags:
+  - Maps
+  properties:
+  - type: OpenAPI
+    url: openapi/gather-maps-api-openapi.yml
+- aid: gather:gather-spaces-api
+  name: Gather Spaces API
+  description: Create and manage Gather spaces
+  humanURL: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+  baseURL: https://api.gather.town
+  tags:
+  - Spaces
+  properties:
+  - type: OpenAPI
+    url: openapi/gather-spaces-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: OpenAPI
+  url: openapi/gather-http-api-openapi.yml
+- type: Authentication
+  url: authentication/gather-authentication.yml
+- type: DomainSecurity
+  url: security/gather-domain-security.yml
+- type: Packages
+  url: packages/gather-packages.yml
+- type: SDKs
+  url: packages/gather-packages.yml
+- type: WellKnown
+  url: well-known/gather-well-known.yml
+- type: MCPServer
+  url: mcp/gather-mcp.yml
+- type: LLMsTxt
+  url: llms/gather-llms.txt
+- type: Overlay
+  url: overlays/gather-http-api-overlay.yaml
+- type: Conformance
+  url: conformance/gather-conformance.yml
+- type: ErrorCatalog
+  url: errors/gather-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/gather-lifecycle.yml
+- type: StatusPage
+  url: https://status.gather.town/
+- type: Conventions
+  url: conventions/gather-conventions.yml
+- type: DataModel
+  url: data-model/gather-data-model.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DeveloperPortal
+  url: https://support.gather.town/hc/en-us/categories/api-integration
+- type: Documentation
+  url: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+- type: APIReference
+  url: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+- type: GettingStarted
+  url: https://github.com/gathertown/api-examples
+- type: GitHubOrganization
+  url: https://github.com/gathertown
+- type: Support
+  url: https://support.gather.town/
+- type: Blog
+  url: https://gather.town/blog
+- type: Pricing
+  url: https://gather.town/pricing
+- type: SignUp
+  url: https://app.gather.town/signup
+- type: TermsOfService
+  url: https://gather.town/terms
+- type: PrivacyPolicy
+  url: https://gather.town/privacy
 - type: Website
   url: https://gather.town/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

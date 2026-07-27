@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/gather-http-api-openapi.yml
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: Authentication is a static apiKey header, not OAuth2.
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are returned as bare HTTP status codes, not application/problem+json.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: No /.well-known/security.txt served (probed 2026-07-19).
+  - id: json-api
+    conforms: false
+  - id: pagination
+    conforms: false
+    evidence: No documented list pagination.
+  - id: idempotency
+    conforms: false
+    evidence: No documented idempotency-key mechanism.

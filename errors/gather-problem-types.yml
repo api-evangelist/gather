@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: derived
+format: http-status
+source: openapi/gather-http-api-openapi.yml
+note: >-
+  Gather's HTTP API returns plain HTTP status codes (not RFC 9457
+  application/problem+json). The entries below are derived from the documented
+  responses and community-reported error conditions on the Gather developer
+  forum.
+problems:
+  - status: 400
+    title: Bad Request
+    meaning: Malformed request body or missing/invalid parameters (e.g. an invalid setEmailGuestlist payload).
+    remediation: Validate the JSON body and required fields before sending.
+    source_operation: openapi/gather-http-api-openapi.yml#setEmailGuestlist
+  - status: 403
+    title: Forbidden
+    meaning: The API key lacks Admin or Builder permission on the target space.
+    remediation: Use an API key for a user with Admin/Builder access to the space.
+    source_operation: openapi/gather-http-api-openapi.yml#getEmailGuestlist
+  - status: 404
+    title: Not Found
+    meaning: The referenced space or map does not exist, or the endpoint path/spaceId is wrong.
+    remediation: Confirm the spaceId (URL-encoded) and mapId are correct.
+    source_operation: openapi/gather-http-api-openapi.yml#getMap

@@ -1,0 +1,19 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Gather HTTP API
+  version: 1.0.0
+extends: openapi/gather-http-api-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-enriched: true
+      x-apievangelist-auth: api-key-header
+      x-apievangelist-realtime: websocket (@gathertown/gather-game-client)
+  - target: $.tags
+    update:
+      - name: Spaces
+        x-area: future-of-work
+      - name: Maps
+        x-area: future-of-work
+      - name: Guestlist
+        x-area: future-of-work

@@ -1,0 +1,18 @@
+{
+  "provider": "gather",
+  "sources": [
+    "gather-guestlist-api-openapi.yml",
+    "gather-maps-api-openapi.yml",
+    "gather-spaces-api-openapi.yml"
+  ],
+  "outputs": [
+    "gather-guestlist-api-openapi.yml",
+    "gather-maps-api-openapi.yml",
+    "gather-spaces-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,252 @@
+openapi: 3.0.3
+info:
+  title: Gather HTTP API
+  version: '2.0'
+  description: >-
+    The Gather HTTP API lets you read and write the map/room data of a Gather
+    space and manage its email guestlist programmatically, enabling dynamically
+    and programmatically generated maps. Authentication is via an API key
+    generated at https://gather.town/apiKeys; the caller must have Admin or
+    Builder permission on the space being modified. This description was
+    reconstructed by the API Evangelist enrichment pipeline from Gather's
+    official public documentation (Notion HTTP API reference) and the
+    gathertown/api-examples repository — it captures the documented,
+    verified operations and is not an official Gather OpenAPI document.
+  x-provenance:
+    generated: '2026-07-19'
+    method: derived
+    source:
+      - https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+      - https://github.com/gathertown/api-examples
+  contact:
+    name: Gather Support
+    url: https://support.gather.town/
+servers:
+  - url: https://api.gather.town
+    description: Gather HTTP API
+security:
+  - apiKey: []
+tags:
+  - name: Spaces
+    description: Create and manage Gather spaces
+  - name: Maps
+    description: Read and write the map/room data of a space
+  - name: Guestlist
+    description: Manage the email guestlist (members/guests) of a space
+paths:
+  /api/v2/spaces:
+    post:
+      operationId: createSpace
+      summary: Create a space
+      description: >-
+        Create a new Gather space, optionally cloning an existing space passed
+        as sourceSpace. Requires an API key with sufficient permission.
+      tags: [Spaces]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Display name for the new space.
+                sourceSpace:
+                  type: string
+                  description: Space ID to clone the new space from.
+              required: [name]
+      responses:
+        '200':
+          description: The created space identifier.
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /api/v2/spaces/{spaceId}/maps/{mapId}:
+    parameters:
+      - $ref: '#/components/parameters/SpaceId'
+      - $ref: '#/components/parameters/MapId'
+    get:
+      operationId: getMap
+      summary: Get map
+      description: Retrieve the full map/room data for a given map within a space.
+      tags: [Maps]
+      parameters:
+        - name: useV2Map
+          in: query
+          required: false
+          schema:
+            type: boolean
+          description: Return the v2 map representation.
+      responses:
+        '200':
+          description: The map document.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Map'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+    post:
+      operationId: setMap
+      summary: Set map
+      description: >-
+        Overwrite the map/room data for a given map within a space. The request
+        body carries the new map content (background image, objects, spawns,
+        impassable tiles, and more).
+      tags: [Maps]
+      parameters:
+        - name: useV2Map
+          in: query
+          required: false
+          schema:
+            type: boolean
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  $ref: '#/components/schemas/Map'
+      responses:
+        '200':
+          description: Map updated.
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /api/getEmailGuestlist:
+    get:
+      operationId: getEmailGuestlist
+      summary: Get email guestlist
+      description: >-
+        Retrieve the email guestlist for a space — a JSON object keyed by email
+        address, each value carrying optional name, affiliation, and role.
+      tags: [Guestlist]
+      parameters:
+        - $ref: '#/components/parameters/SpaceIdQuery'
+      responses:
+        '200':
+          description: The guestlist object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Guestlist'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /api/setEmailGuestlist:
+    post:
+      operationId: setEmailGuestlist
+      summary: Set email guestlist
+      description: >-
+        Set or update the email guestlist for a space. When overwrite is false
+        the supplied entries are merged/appended; when true the guestlist is
+        replaced.
+      tags: [Guestlist]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                spaceId:
+                  type: string
+                guestlist:
+                  $ref: '#/components/schemas/Guestlist'
+                overwrite:
+                  type: boolean
+                  description: Replace the guestlist instead of merging.
+              required: [spaceId, guestlist]
+      responses:
+        '200':
+          description: Guestlist updated.
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: apiKey
+      description: >-
+        API key generated at https://gather.town/apiKeys, sent in the apiKey
+        request header. The associated user must have Admin or Builder
+        permission on the target space.
+  parameters:
+    SpaceId:
+      name: spaceId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: The space identifier (URL-encoded; contains a backslash-delimited id).
+    MapId:
+      name: mapId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: The map/room identifier within the space.
+    SpaceIdQuery:
+      name: spaceId
+      in: query
+      required: true
+      schema:
+        type: string
+      description: The space identifier.
+  responses:
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
+    Forbidden:
+      description: The API key lacks permission on the target space.
+    NotFound:
+      description: The referenced space or map was not found.
+  schemas:
+    Map:
+      type: object
+      description: Gather map/room document.
+      properties:
+        backgroundImagePath:
+          type: string
+        spawns:
+          type: array
+          items:
+            type: object
+        objects:
+          type: array
+          items:
+            type: object
+        collisions:
+          type: string
+    Guestlist:
+      type: object
+      description: >-
+        Object keyed by email address; each value is an object with optional
+        name, affiliation, and role string fields.
+      additionalProperties:
+        type: object
+        properties:
+          name:
+            type: string
+          affiliation:
+            type: string
+          role:
+            type: string

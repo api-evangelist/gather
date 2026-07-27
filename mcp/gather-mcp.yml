@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: openapi/gather-http-api-openapi.yml
+note: >-
+  No official hosted/remote Gather MCP server was found (searched Gather docs,
+  the gathertown GitHub org, and the MCP registry). The tool list below is a
+  candidate derived one-to-one from the documented Gather HTTP API operations.
+server:
+  name: gather
+  transport: http
+tools:
+  - name: create_space
+    description: Create a new Gather space (optionally cloned from a source space).
+    source_operation: openapi/gather-http-api-openapi.yml#createSpace
+  - name: get_map
+    description: Retrieve the map/room data for a map within a space.
+    source_operation: openapi/gather-http-api-openapi.yml#getMap
+  - name: set_map
+    description: Overwrite the map/room data for a map within a space.
+    source_operation: openapi/gather-http-api-openapi.yml#setMap
+  - name: get_email_guestlist
+    description: Retrieve the email guestlist for a space.
+    source_operation: openapi/gather-http-api-openapi.yml#getEmailGuestlist
+  - name: set_email_guestlist
+    description: Set or update the email guestlist for a space.
+    source_operation: openapi/gather-http-api-openapi.yml#setEmailGuestlist

@@ -1,0 +1,12 @@
+generated: '2026-07-19'
+method: generated
+source: openapi/gather-http-api-openapi.yml
+skills:
+  - file: gather-manage-space-maps.md
+    name: Manage Gather space maps
+    api: openapi/gather-http-api-openapi.yml
+    operations: [createSpace, getMap, setMap]
+  - file: gather-manage-guestlist.md
+    name: Manage Gather email guestlist
+    api: openapi/gather-http-api-openapi.yml
+    operations: [getEmailGuestlist, setEmailGuestlist]

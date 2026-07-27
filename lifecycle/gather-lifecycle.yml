@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source:
+  - https://status.gather.town/
+  - https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+versioning:
+  scheme: uri-path
+  current: v2
+  note: >-
+    /api/v2/* endpoints are current; legacy /api/* guestlist endpoints remain
+    available. No formal dated deprecation policy is published.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No published deprecation/sunset policy or RFC 8594 header support found.
+sla:
+  url: null
+status_page: https://status.gather.town/
+deprecated_operations: []

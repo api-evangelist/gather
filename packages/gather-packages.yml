@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/~gathertownrobot
+packages:
+  - language: javascript
+    registry: npm
+    name: "@gathertown/gather-game-client"
+    url: https://www.npmjs.com/package/@gathertown/gather-game-client
+    install: npm install @gathertown/gather-game-client
+    version: 43.0.1
+    license: ISC
+    official: true
+    description: >-
+      Official Gather WebSocket "game" client — connect to a space, subscribe to
+      realtime events (player movement, chat, interactions) and drive an avatar
+      or bot. Published by Gather (maintainers gathertownrobot / andrew-gather /
+      aaroncohengather).
+  - language: javascript
+    registry: npm
+    name: "@gathertown/gather-game-common"
+    url: https://www.npmjs.com/package/@gathertown/gather-game-common
+    install: npm install @gathertown/gather-game-common
+    version: 35.0.1
+    license: ISC
+    official: true
+    description: >-
+      Shared protocol definitions and common utilities used by the Gather game
+      client. Published by Gather.
+  - language: javascript
+    registry: npm
+    name: gathertown.js
+    url: https://www.npmjs.com/package/gathertown.js
+    install: npm install gathertown.js
+    official: false
+    description: >-
+      Community-contributed unofficial JS/TS SDK wrapping Gather's HTTPS and
+      WebSocket APIs (warengonzaga/gathertown.js). Not maintained by Gather.

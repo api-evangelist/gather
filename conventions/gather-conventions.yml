@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: derived
+source:
+  - openapi/gather-http-api-openapi.yml
+  - https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
+authentication:
+  style: api-key-header
+  header: apiKey
+  keys_url: https://gather.town/apiKeys
+  note: >-
+    Static per-user API key sent in the apiKey header; caller must hold Admin or
+    Builder permission on the target space. No OAuth/OIDC scope surface.
+versioning:
+  scheme: uri-path
+  note: >-
+    Two path families coexist: the newer /api/v2/* endpoints (spaces, maps) and
+    legacy /api/* endpoints (getEmailGuestlist, setEmailGuestlist). A useV2Map
+    query flag selects the v2 map representation.
+  current: v2
+idempotency:
+  supported: false
+  note: >-
+    Gather documents no idempotency-key header. setMap and setEmailGuestlist are
+    replace/merge operations (setEmailGuestlist takes an overwrite flag), so
+    repeated identical writes converge but there is no dedupe token.
+pagination:
+  supported: false
+  note: Documented endpoints operate on single spaces/maps; no list pagination surface.
+error_envelope:
+  style: http-status
+  note: Errors surface as HTTP status codes (400/403/404); see errors/gather-problem-types.yml.
+rate_limits:
+  documented: false
+realtime:
+  channel: websocket
+  note: >-
+    A separate realtime WebSocket "game" API is exposed via the official
+    @gathertown/gather-game-client SDK (subscribe to player/movement/chat events
+    and drive avatars). It is not an HTTP/webhook surface.
+cross_references:
+  authentication: authentication/gather-authentication.yml
+  errors: errors/gather-problem-types.yml
+  lifecycle: lifecycle/gather-lifecycle.yml

@@ -1,0 +1,264 @@
+# Classic (1.0) Gather Help Center
+
+
+## Getting Started
+
+
+### Intro to Gather
+
+- [Overview of Shareable Link Types](https://support.gather.town/articles/9878073681-overview-of-shareable-link-types)
+- [What is Gather 1.0?](https://support.gather.town/articles/7937173755-what-is-gather)
+- [Overview of Gather 1.0 Features](https://support.gather.town/articles/3950877146-overview-of-gather-1-0-features)
+- [Looking & Moving Around the Office](https://support.gather.town/articles/1285650718-looking-moving-around-the-office)
+- [Participants Panel Overview](https://support.gather.town/articles/3602925011-participants-panel-overview)
+- [Gather 1.0 Office Space Settings](https://support.gather.town/articles/7190607547-office-space-settings)
+- [User Settings](https://support.gather.town/articles/8746349223-user-settings)
+- [Manage Language Preferences](https://support.gather.town/articles/7294163326-manage-language-preferences)
+- [Keyboard Shortcuts](https://support.gather.town/articles/4590630457-keyboard-shortcuts)
+
+### Hosting a Virtual Conference
+
+- [Getting Started with a Conference Space](https://support.gather.town/articles/8055663858-getting-started-with-a-conference-space)
+- [Gather 1.0 Conference Space Settings](https://support.gather.town/articles/2497373112-conference-space-settings)
+- [Invite Members and Guests to a Conference Space](https://support.gather.town/articles/5060677390-invite-members-and-guests-to-a-conference-space)
+- [Change the Space for an Event](https://support.gather.town/articles/7582950852-change-the-space-for-an-event)
+
+### Creating Your First Office
+
+- [Gather 1.0 Pilot Guide](https://support.gather.town/articles/8892479403-gather-1-0-pilot-guide)
+- [Gather 1.0 vs Gather 2.0](https://support.gather.town/articles/2163640255-gather-1-0-vs-gather-2-0)
+- [Take a Tour of an Office on Gather](https://support.gather.town/articles/2958572750-take-a-tour-of-an-office-on-gather)
+- [Creating a Remote Office Space](https://support.gather.town/articles/5091903529-creating-a-remote-office-space)
+- [Place Labels with the Text Tool](https://support.gather.town/articles/1139267591-place-labels-with-the-text-tool)
+- [Add or Remove Desks in Your Office](https://support.gather.town/articles/3735354184-add-or-remove-desks-in-your-office)
+
+### Working in a Virtual Office
+
+- [Customize Your Avatar](https://support.gather.town/articles/9272295499-customize-your-avatar)
+- [Claim and Customize Your Desk](https://support.gather.town/articles/3227467030-claim-and-customize-your-desk)
+- [Edit and View User Profiles](https://support.gather.town/articles/4756948608-edit-and-view-user-profiles)
+- [Start Conversations: Wave, Ring, and Walk Over](https://support.gather.town/articles/4772337318-start-conversations-wave-ring-and-walk-over)
+- [Overview of Chat for Gather 1.0 Remote Office Spaces](https://support.gather.town/articles/2360216656-overview-of-chat-for-remote-office-spaces)
+- [Overview of Meetings for Remote Office Spaces](https://support.gather.town/articles/4892470515-overview-of-meetings-for-remote-office-spaces)
+
+### Onboarding Your Team
+
+- [Resources for Introducing Gather to Your Team](https://support.gather.town/articles/5783739618-resources-for-introducing-gather-to-your-team)
+- [Add and Remove Office Members](https://support.gather.town/articles/9997342148-add-and-remove-office-members)
+- [Day 1 In The Office + Tips for Adoption](https://support.gather.town/articles/7971842088-day-1-in-the-office-tips-for-adoption)
+- [Remote Office Week 1 Onboarding Checklist](https://support.gather.town/articles/4426243569-remote-office-week-1-onboarding-checklist)
+- [Examples of Team Guidelines for Using Gather](https://support.gather.town/articles/8341499210-examples-of-team-guidelines-for-using-gather)
+- [Invite and Manage Guests in Your 1.0 Office](https://support.gather.town/articles/4278561769-invite-and-manage-guests-in-your-office)
+
+## Account Management & Billing
+
+
+### Managing Your Subscription or Reservation
+
+- [Understanding Gather’s pricing changes (2025)](https://support.gather.town/articles/2500085119-understanding-gather-s-pricing-changes-2025)
+- [Refund Policy](https://support.gather.town/articles/8014157780-refund-policy)
+- [Create and Manage your Gather 1.0 One-Time Reservation](https://support.gather.town/articles/3900581575-create-and-manage-your-gather-1-0-one-time-reservation)
+- [Start and Manage Monthly or Annual Gather 1.0 Subscriptions](https://support.gather.town/articles/2904336860-start-and-manage-monthly-or-annual-gather-1-0-subscriptions)
+- [Shut Down or Delete Your Space](https://support.gather.town/articles/6688802270-shut-down-or-delete-your-space)
+- [Receipts and Invoices](https://support.gather.town/articles/9764772302-receipts-and-invoices)
+
+### Choosing a Plan
+
+- [Gather 1.0 Pricing Overview: Subscriptions, Reservations, and Space Capacity](https://support.gather.town/articles/8852291707-gather-1-0-pricing-overview-subscriptions-reservations-and-space-capacity)
+- [Discounts and Sponsorships](https://support.gather.town/articles/2244523252-discounts-and-sponsorships)
+
+### Managing Your Account
+
+- [Change Your Space Name](https://support.gather.town/articles/8454822552-change-your-space-name)
+- [Change Your Email Address](https://support.gather.town/articles/4990287429-change-your-email-address)
+- [Delete Your Account](https://support.gather.town/articles/6893786325-delete-your-account)
+- [Report a Bug](https://support.gather.town/articles/2679745956-report-a-bug)
+
+## Settings & Features
+
+
+### Interacting with Users
+
+- [Fun Interactions: Dance, High Five, and Throw Confetti](https://support.gather.town/articles/7568409588-fun-interactions-dance-high-five-and-throw-confetti)
+- [Use Emotes and Customize the Emote Bar](https://support.gather.town/articles/2109189467-use-emotes-and-customize-the-emote-bar)
+- [Set Your Status: Available, Busy, and Do Not Disturb](https://support.gather.town/articles/3094704589-set-your-status-available-busy-and-do-not-disturb)
+- [Leave and Receive Notes](https://support.gather.town/articles/6012713809-leave-and-receive-notes)
+- [Talk in a Bubble](https://support.gather.town/articles/3330510961-talk-in-a-bubble)
+- [Ambient Desks (Beta)](https://support.gather.town/articles/4022229898-ambient-desks-beta)
+
+### Productivity Features
+
+- [AI Transcriptions & Summaries (Beta Release)](https://support.gather.town/articles/3698731033-ai-transcriptions-summaries-beta-release)
+- [Schedule Meetings](https://support.gather.town/articles/8308555684-schedule-meetings)
+- [Record Meetings](https://support.gather.town/articles/6817140453-record-meetings)
+- [Annotate on Shared Screens](https://support.gather.town/articles/9780333133-annotate-on-shared-screens)
+- [Collaborate on Whiteboards](https://support.gather.town/articles/1560249544-collaborate-on-whiteboards)
+- [Spotlight a Speaker for Presentations](https://support.gather.town/articles/9484274900-spotlight-a-speaker-for-presentations)
+
+### Common FAQs & Troubleshooting
+
+- [How to Collect Desktop Logs for Troubleshooting](https://support.gather.town/articles/9506266666-how-to-collect-desktop-logs-for-troubleshooting)
+- [Browser Support Policy](https://support.gather.town/articles/6301202979-browser-support-policy)
+- [Record a Performance Profile](https://support.gather.town/articles/9106890050-record-a-performance-profile)
+- [Underage 18 User Restrictions](https://support.gather.town/articles/1641080505-underage-18-user-restrictions)
+- [What do you do with the files I upload?](https://support.gather.town/articles/1973201214-what-do-you-do-with-the-files-i-upload)
+- [Understanding Different Space Types](https://support.gather.town/articles/4331267447-different-space-types)
+- [Troubleshooting Checklist: Audio, Video, and Performance Issues](https://support.gather.town/articles/4037885669-troubleshooting-checklist-audio-video-and-performance-issues)
+- [Troubleshooting a black screen](https://support.gather.town/articles/2173820434-all-i-see-is-a-black-screen-what-do-i-do)
+- ["Gather Lost Connection" Error](https://support.gather.town/articles/3282649994-gather-lost-connection-error)
+- [Troubleshooting Bluetooth Headsets](https://support.gather.town/articles/4744477195-troubleshooting-bluetooth-headsets)
+- ["An Error Has Occurred" Error](https://support.gather.town/articles/9951294787-an-error-has-occurred-error)
+- ["Refused to Connect" Error](https://support.gather.town/articles/9014082960-refused-to-connect-error)
+- [How do I embed a Miro Board?](https://support.gather.town/articles/5757029813-how-do-i-embed-a-miro-board)
+- [Personal calendars vs space calendars](https://support.gather.town/articles/5679667643-what-is-the-difference-between-space-and-personal-calendars)
+
+### Audio & Video
+
+- [Overview of Spatial Audio & Video](https://support.gather.town/articles/4624155403-overview-of-spatial-audio-video)
+- [Changing Your Video View](https://support.gather.town/articles/3515338779-changing-your-video-view)
+- [Share Your Screen](https://support.gather.town/articles/1355668690-share-your-screen)
+- [Virtual Backgrounds](https://support.gather.town/articles/7638328401-virtual-backgrounds)
+- [Background Noise Reduction](https://support.gather.town/articles/8739880260-background-noise-reduction)
+- [Ambient Noise](https://support.gather.town/articles/1581570357-ambient-noise)
+
+### Interactive Objects
+
+- [Add Dogs and Custom Pets](https://support.gather.town/articles/2534643375-add-dogs-and-custom-pets)
+- [Go Karts](https://support.gather.town/articles/2300814885-go-karts)
+- [Note Objects](https://support.gather.town/articles/7577228358-note-objects)
+- [Bulletin Boards](https://support.gather.town/articles/5306809631-bulletin-boards)
+- [Embed Files](https://support.gather.town/articles/4894695834-embed-files)
+
+### Event Features
+
+- [Pin Messages & Make Announcements on Info Boards](https://support.gather.town/articles/4026789144-pin-messages-make-announcements-on-info-boards)
+- [Add Booths & Poster Sets](https://support.gather.town/articles/9003922005-add-booths-poster-sets)
+- [Overview of Chat for Conference Spaces](https://support.gather.town/articles/6559266656-overview-of-chat-for-conference-spaces)
+
+### Privacy & Security
+
+- [Overview of Privacy and Security Policies and Certifications](https://support.gather.town/articles/5124604014-overview-of-privacy-and-security-policies-and-certifications)
+- [Gather Single Sign-On (SSO)](https://support.gather.town/articles/4101265817-gather-single-sign-on-sso)
+- [Allow Staff Access](https://support.gather.town/articles/6995156346-allow-staff-access)
+- [User Roles & Permissions](https://support.gather.town/articles/6264710558-user-roles-permissions)
+- [Limit How People Access Your Space](https://support.gather.town/articles/2593292862-limit-how-people-access-your-space)
+- [Remote Office Guest Check-In](https://support.gather.town/articles/4128932154-remote-office-guest-check-in)
+- [Moderation Tools: Mute, Block, Kick, & Ban Users](https://support.gather.town/articles/3793376358-moderation-tools-mute-block-kick-ban-users)
+- [VPN & Firewall Access](https://support.gather.town/articles/7727454937-vpn-firewall-access)
+- [Insights (Premium Office Feature)](https://support.gather.town/articles/6468566375-insights-premium-office-feature)
+
+### Extensions
+
+- [Door Extensions (Basic, Member-Only, & Password Doors)](https://support.gather.town/articles/6272564671-door-extensions-basic-member-only-password-doors)
+- [Applause Extension](https://support.gather.town/articles/4269803312-applause-extension)
+- [Deca Art Extension](https://support.gather.town/articles/7721207981-deca-art-extension)
+- [Friendly Plant Extension](https://support.gather.town/articles/2756917412-friendly-plant-extension)
+
+## Customizing Your Space
+
+
+### Overview
+
+- [Gong Extension](https://support.gather.town/articles/8142038670-gong-extension)
+- [Customize Your Space](https://support.gather.town/articles/8435554423-customize-your-space)
+- [Build Tool Overview](https://support.gather.town/articles/6802394997-build-tool-overview)
+- [Custom Map Overview](https://support.gather.town/articles/7871402936-custom-map-overview)
+- [Mapmaker Overview](https://support.gather.town/articles/9657827678-mapmaker-overview)
+- [Mapmaker: Background & Foreground](https://support.gather.town/articles/8324831589-mapmaker-background-foreground)
+- [Walls & Floors (Beta - Remote Offices Only)](https://support.gather.town/articles/4229802771-walls-floors-beta-remote-offices-only)
+
+### Creating Custom Maps
+
+- [Connect Tiles, Rooms, or Spaces with Portal Tiles](https://support.gather.town/articles/9460477719-connect-tiles-rooms-or-spaces-with-portal-tiles)
+- [Add a Room to Your Space](https://support.gather.town/articles/7926276264-add-a-room-to-your-space)
+- [Copy a Room or Space](https://support.gather.town/articles/2145730166-copy-a-room-or-space)
+- [Remove Extra Rooms](https://support.gather.town/articles/5219827988-remove-extra-rooms)
+- [Change the Primary Room Where Guests Enter a Conference Space](https://support.gather.town/articles/6916571840-change-the-primary-room-where-people-first-enter-your-space)
+- [Wayfinding](https://support.gather.town/articles/8441067250-wayfinding)
+- [How do I move, realign, or expand my background?](https://support.gather.town/articles/9401152226-how-do-i-move-realign-or-expand-my-background)
+
+### Design Guidelines
+
+- [Best Practices in Gather 1.0 Office Design](https://support.gather.town/articles/3513901174-best-practices-in-office-design)
+- [Tilesheets](https://support.gather.town/articles/9257484738-tilesheets)
+- [Sizes](https://support.gather.town/articles/9253868124-sizes)
+- [Accessibility Best Practices for Inclusive Space Design](https://support.gather.town/articles/1489858946-accessibility-best-practices-for-inclusive-space-design)
+
+### Adding Custom Objects
+
+- [Objects Overview](https://support.gather.town/articles/5874848981-objects-overview)
+- [Custom Objects](https://support.gather.town/articles/8511965574-custom-objects)
+- [Object Advanced Options](https://support.gather.town/articles/5176614968-advanced-object-options)
+- [Activation Distance](https://support.gather.town/articles/5841805275-activation-distance)
+- [Embedded Images](https://support.gather.town/articles/6727595581-embedded-images)
+- [Embedded Videos](https://support.gather.town/articles/7754693147-embedded-videos)
+- [Embedded Websites](https://support.gather.town/articles/1619815823-embedded-websites)
+- [External Calls](https://support.gather.town/articles/7700641025-external-calls)
+- [Slideshows](https://support.gather.town/articles/4311048744-slideshows)
+- [How do I reorder or delete an object in a stack?](https://support.gather.town/articles/5878527884-how-do-i-reorder-or-delete-an-object-in-a-stack)
+
+### Adding Tile Effects
+
+- [Tile Effects Overview](https://support.gather.town/articles/3805539818-tile-effects-overview)
+- [Overview of Meeting Rooms (Private Areas)](https://support.gather.town/articles/2550999600-overview-of-meeting-rooms-private-areas)
+- [Spotlight Tiles](https://support.gather.town/articles/5684809314-spotlight-tiles)
+- [Impassable Tiles](https://support.gather.town/articles/3750793379-impassable-tiles)
+- [Spawn Tiles](https://support.gather.town/articles/9237904140-spawn-tiles)
+- [Copying the Spawn Location Link](https://support.gather.town/articles/2238493681-copying-the-spawn-location-link)
+
+## Apps & Integrations
+
+
+### Desktop & Mobile
+
+- [Desktop Mini Mode](https://support.gather.town/articles/3720395050-desktop-mini-mode)
+- [Enable Desktop Notifications](https://support.gather.town/articles/5735842092-enable-desktop-notifications)
+- [Download or Update the Gather 1.0 Desktop App](https://support.gather.town/articles/5731008282-download-or-update-the-gather-1-0-desktop-app)
+- [Troubleshooting in the Gather Mobile App](https://support.gather.town/articles/1631933686-troubleshooting-in-the-gather-mobile-app)
+- [Gather 1.0 Mobile App](https://support.gather.town/articles/7408975524-gather-1-0-mobile-app)
+- [System Requirements](https://support.gather.town/articles/6736502142-system-requirements)
+- [Set Desktop Browser and System Permissions](https://support.gather.town/articles/6085022040-set-desktop-browser-and-system-permissions)
+- [Gather 1.0 on Mobile Browsers](https://support.gather.town/articles/7619450362-gather-1-0-on-mobile-browsers)
+- [Troubleshooting Gather on Firefox](https://support.gather.town/articles/7554700564-troubleshooting-gather-on-firefox)
+
+### App Integrations
+
+- [Zapier Integration for Gather Meeting Recordings (Beta)](https://support.gather.town/articles/1666551743-zapier-integration-for-gather-meeting-recordings-beta)
+- [Outlook Calendar Integration & Add-In](https://support.gather.town/articles/1424739631-outlook-calendar-integration-add-in)
+- [Google Calendar Integration & Chrome Extension](https://support.gather.town/articles/9748985622-google-calendar-integration-chrome-extension)
+- [Gather Meetings Slack Integration](https://support.gather.town/articles/2366455196-gather-meetings-slack-integration)
+- [Gather API](https://support.gather.town/articles/9786368425-gather-api)
+
+## Ideas for Using Your Space
+
+
+### Virtual Office Guides
+
+- [Host a Team Retreat](https://support.gather.town/articles/5619995633-host-a-team-retreat)
+- [Host a Hackathon or Hack Day Event](https://support.gather.town/articles/4507060680-host-a-hackathon-or-hack-day-event)
+- [Gather for Engineering Teams](https://support.gather.town/articles/3367182370-gather-for-engineering-teams)
+- [Gather for Managers](https://support.gather.town/articles/2921881747-gather-for-managers)
+- [Hiring & Onboarding in Gather](https://support.gather.town/articles/6812249430-hiring-onboarding-in-gather)
+- [Gather Quick Start Guide for Candidates](https://support.gather.town/articles/6805843284-gather-quick-start-guide-for-candidates)
+- [Hosting All-Hands Meetings](https://support.gather.town/articles/4008485687-hosting-all-hands-meetings)
+
+### Team Socials & Activities
+
+- [Host a Team Social or Activity](https://support.gather.town/articles/2380211989-host-a-team-social-or-activity)
+- [Host a Christmas or Holiday Party](https://support.gather.town/articles/5015189720-host-a-christmas-or-holiday-party)
+- [Experiences Overview](https://support.gather.town/articles/1933989563-experiences-overview)
+- [Christmas Tree Decorating](https://support.gather.town/articles/3751025952-christmas-tree-decorating)
+- [Host a Go Kart Race with the Gather Grand Prix](https://support.gather.town/articles/9887795563-host-a-go-kart-race-with-the-gather-grand-prix)
+- [Playing Embedded Games](https://support.gather.town/articles/4156487779-playing-embedded-games)
+- [Host a Tetris Tournament](https://support.gather.town/articles/5223955986-host-a-tetris-tournament)
+- [Host a Movie Night](https://support.gather.town/articles/2368983028-host-a-movie-night)
+- [Listening to Music Together](https://support.gather.town/articles/8539852402-listening-to-music-together)
+- [Dungeon Escape Map](https://support.gather.town/articles/7167558573-dungeon-escape-map)
+- [Islands Scavenger Hunt](https://support.gather.town/articles/7514214787-islands-scavenger-hunt)
+- [Mystery Mansion Scavenger Hunt](https://support.gather.town/articles/8898604271-mystery-mansion-scavenger-hunt)
+- [Speed Gathering](https://support.gather.town/articles/8674297796-speed-gathering)
+- [Taking Sides](https://support.gather.town/articles/8052931963-taking-sides)
+
+### Virtual Events & Conferences
+
+- [Connect Multiple 1.0 Spaces for a 500+ Person Event](https://support.gather.town/articles/6044193155-connect-multiple-spaces-for-a-500-person-event)

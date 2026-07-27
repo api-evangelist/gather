@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/gather-http-api-openapi.yml
+entities:
+  - name: Space
+    description: A Gather virtual space (office/conference/event world), identified by a spaceId.
+    id_field: spaceId
+  - name: Map
+    description: A room/map within a space (background image, spawns, objects, collisions), identified by mapId.
+    id_field: mapId
+  - name: GuestlistEntry
+    description: A per-email membership record carrying optional name, affiliation, and role.
+    id_field: email
+relationships:
+  - from: Space
+    to: Map
+    type: has_many
+    via: mapId
+  - from: Map
+    to: Space
+    type: belongs_to
+    via: spaceId
+  - from: Space
+    to: GuestlistEntry
+    type: has_many
+    via: email
+  - from: GuestlistEntry
+    to: Space
+    type: belongs_to
+    via: spaceId

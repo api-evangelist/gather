@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on Gather hosts
+hosts:
+  - host: https://api.gather.town
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://gather.town
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        note: redirects to app.gather.town SPA shell; no RFC 9116 document served
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        note: redirects to SPA shell; no manifest served
+notes: >-
+  No machine-readable /.well-known discovery documents are published on the
+  Gather API or website hosts (authentication is a static apiKey header, not
+  OAuth/OIDC). A published llms.txt exists at support.gather.town/llms.txt
+  (captured separately in llms/).
