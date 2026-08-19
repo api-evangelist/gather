@@ -1,0 +1,91 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gather HTTP Guestlist Maps API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apiKey",
+      "value": "{{apiKey}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Maps",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get map",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.gather.town/api/v2/spaces/:spaceId/maps/:mapId",
+            "params": [
+              {
+                "name": "spaceId",
+                "value": "",
+                "type": "path",
+                "description": "The space identifier (URL-encoded; contains a backslash-delimited id)."
+              },
+              {
+                "name": "mapId",
+                "value": "",
+                "type": "path",
+                "description": "The map/room identifier within the space."
+              },
+              {
+                "name": "useV2Map",
+                "value": "",
+                "type": "query",
+                "description": "Return the v2 map representation."
+              }
+            ]
+          },
+          "docs": "Retrieve the full map/room data for a given map within a space."
+        },
+        {
+          "info": {
+            "name": "Set map",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.gather.town/api/v2/spaces/:spaceId/maps/:mapId",
+            "params": [
+              {
+                "name": "spaceId",
+                "value": "",
+                "type": "path",
+                "description": "The space identifier (URL-encoded; contains a backslash-delimited id)."
+              },
+              {
+                "name": "mapId",
+                "value": "",
+                "type": "path",
+                "description": "The map/room identifier within the space."
+              },
+              {
+                "name": "useV2Map",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Overwrite the map/room data for a given map within a space. The request body carries the new map content (background image, objects, spawns, impassable tiles, and more)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

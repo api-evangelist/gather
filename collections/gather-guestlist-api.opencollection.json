@@ -1,0 +1,60 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Gather HTTP Guestlist API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "apiKey",
+      "value": "{{apiKey}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Guestlist",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get email guestlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.gather.town/api/getEmailGuestlist",
+            "params": [
+              {
+                "name": "spaceId",
+                "value": "",
+                "type": "query",
+                "description": "The space identifier."
+              }
+            ]
+          },
+          "docs": "Retrieve the email guestlist for a space — a JSON object keyed by email address, each value carrying optional name, affiliation, and role."
+        },
+        {
+          "info": {
+            "name": "Set email guestlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.gather.town/api/setEmailGuestlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Set or update the email guestlist for a space. When overwrite is false the supplied entries are merged/appended; when true the guestlist is replaced."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

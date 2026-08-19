@@ -1,0 +1,468 @@
+{
+  "item": [
+    {
+      "id": "c012a889-02f2-4021-bab5-2d64e682c9e2",
+      "name": "Guestlist",
+      "description": {
+        "content": "Manage the email guestlist (members/guests) of a space",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "144689e7-5384-4810-8068-0824bd08c9cf",
+          "name": "Get email guestlist",
+          "request": {
+            "name": "Get email guestlist",
+            "description": {
+              "content": "Retrieve the email guestlist for a space — a JSON object keyed by email address, each value carrying optional name, affiliation, and role.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "getEmailGuestlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "spaceId",
+                  "value": "<string>",
+                  "description": "(Required) The space identifier."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "79939ee5-ec7f-4759-ac16-e25ed1c80443",
+              "name": "The guestlist object.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "getEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "spaceId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": {\n    \"name\": \"string\",\n    \"affiliation\": \"string\",\n    \"role\": \"string\"\n  },\n  \"key_1\": {\n    \"name\": \"string\",\n    \"affiliation\": \"string\",\n    \"role\": \"string\"\n  },\n  \"key_2\": {\n    \"name\": \"string\",\n    \"affiliation\": \"string\",\n    \"role\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "6ea1009a-60da-43a2-a02c-71615840bdc7",
+              "name": "The API key lacks permission on the target space.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "getEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "spaceId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "fa891301-c605-4f01-9057-ebff2d3b4ffc",
+              "name": "The referenced space or map was not found.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "getEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "spaceId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ed8cada0-0e44-4314-91f3-bf07a020c046",
+          "name": "Set email guestlist",
+          "request": {
+            "name": "Set email guestlist",
+            "description": {
+              "content": "Set or update the email guestlist for a space. When overwrite is false the supplied entries are merged/appended; when true the guestlist is replaced.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "setEmailGuestlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"spaceId\": \"<string>\",\n  \"guestlist\": {\n    \"key_0\": {\n      \"name\": \"<string>\",\n      \"affiliation\": \"<string>\",\n      \"role\": \"<string>\"\n    }\n  },\n  \"overwrite\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a297534c-cd08-49bc-a69b-a9df434c1004",
+              "name": "Guestlist updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "setEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"spaceId\": \"<string>\",\n  \"guestlist\": {\n    \"key_0\": {\n      \"name\": \"<string>\",\n      \"affiliation\": \"<string>\",\n      \"role\": \"<string>\"\n    }\n  },\n  \"overwrite\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "13265aba-fa22-4547-8f2c-077aeac7ce9f",
+              "name": "Malformed request (invalid body or parameters).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "setEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"spaceId\": \"<string>\",\n  \"guestlist\": {\n    \"key_0\": {\n      \"name\": \"<string>\",\n      \"affiliation\": \"<string>\",\n      \"role\": \"<string>\"\n    }\n  },\n  \"overwrite\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "3459b8ba-f003-43cd-a5f6-2a9c16db22c5",
+              "name": "The API key lacks permission on the target space.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "setEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"spaceId\": \"<string>\",\n  \"guestlist\": {\n    \"key_0\": {\n      \"name\": \"<string>\",\n      \"affiliation\": \"<string>\",\n      \"role\": \"<string>\"\n    }\n  },\n  \"overwrite\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "3fb6ba3c-3476-4665-adb1-a99142122e3a",
+              "name": "The referenced space or map was not found.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "setEmailGuestlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "apiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"spaceId\": \"<string>\",\n  \"guestlist\": {\n    \"key_0\": {\n      \"name\": \"<string>\",\n      \"affiliation\": \"<string>\",\n      \"role\": \"<string>\"\n    }\n  },\n  \"overwrite\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.gather.town",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "apiKey"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b9ebb546-a17b-42df-87e0-0f7cbf982cfb",
+    "name": "Gather HTTP Guestlist API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Gather HTTP API lets you read and write the map/room data of a Gather space and manage its email guestlist programmatically, enabling dynamically and programmatically generated maps. Authentication is via an API key generated at https://gather.town/apiKeys; the caller must have Admin or Builder permission on the space being modified. This description was reconstructed by the API Evangelist enrichment pipeline from Gather's official public documentation (Notion HTTP API reference) and the gathertown/api-examples repository — it captures the documented, verified operations and is not an official Gather OpenAPI document.\n\nContact Support:\n Name: Gather Support",
+      "type": "text/plain"
+    }
+  }
+}
