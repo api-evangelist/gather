@@ -45,6 +45,15 @@ tags:
 - Collaboration
 - Metaverse
 - Remote Work
+- Event
+tags_raw:
+- Company
+- Future Of Work
+- Virtual Office
+- Video Conferencing
+- Collaboration
+- Metaverse
+- Remote Work
 - Events
 apis:
 - aid: gather:gather-guestlist-api
