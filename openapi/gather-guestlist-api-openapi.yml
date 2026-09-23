@@ -1,8 +1,8 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Gather HTTP Guestlist API
   version: '2.0'
-  description: The Gather HTTP API lets you read and write the map/room data of a Gather space and manage its email guestlist programmatically, enabling dynamically and programmatically generated maps. Authentication is via an API key generated at https://gather.town/apiKeys; the caller must have Admin or Builder permission on the space being modified. This description was reconstructed by the API Evangelist enrichment pipeline from Gather's official public documentation (Notion HTTP API reference) and the gathertown/api-examples repository — it captures the documented, verified operations and is not an official Gather OpenAPI document.
+  description: The Gather HTTP API lets you read and write the map/room data of a Gather space and manage its email guestlist programmatically, enabling dynamically and programmatically generated maps.
   x-provenance:
     generated: '2026-07-19'
     method: derived
@@ -75,6 +75,13 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
+  responses:
+    Forbidden:
+      description: The API key lacks permission on the target space.
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
+    NotFound:
+      description: The referenced space or map was not found.
   schemas:
     Guestlist:
       type: object
@@ -88,13 +95,6 @@ components:
             type: string
           role:
             type: string
-  responses:
-    BadRequest:
-      description: Malformed request (invalid body or parameters).
-    NotFound:
-      description: The referenced space or map was not found.
-    Forbidden:
-      description: The API key lacks permission on the target space.
   parameters:
     SpaceIdQuery:
       name: spaceId
