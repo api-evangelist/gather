@@ -95,9 +95,11 @@ apis:
   humanURL: https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444
   baseURL: https://api.gather.town
   tags:
+  - Spaces
   - Space
   tags_raw:
   - Spaces
+  - Space
   properties:
   - type: OpenAPI
     url: openapi/gather-spaces-api-openapi.yml
