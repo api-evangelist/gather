@@ -56,10 +56,10 @@ paths:
           $ref: '#/components/responses/Forbidden'
 components:
   responses:
-    BadRequest:
-      description: Malformed request (invalid body or parameters).
     Forbidden:
       description: The API key lacks permission on the target space.
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
   securitySchemes:
     apiKey:
       type: apiKey

@@ -75,13 +75,14 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
-  responses:
-    NotFound:
-      description: The referenced space or map was not found.
-    Forbidden:
-      description: The API key lacks permission on the target space.
-    BadRequest:
-      description: Malformed request (invalid body or parameters).
+  parameters:
+    SpaceIdQuery:
+      name: spaceId
+      in: query
+      required: true
+      schema:
+        type: string
+      description: The space identifier.
   schemas:
     Guestlist:
       type: object
@@ -95,14 +96,13 @@ components:
             type: string
           role:
             type: string
-  parameters:
-    SpaceIdQuery:
-      name: spaceId
-      in: query
-      required: true
-      schema:
-        type: string
-      description: The space identifier.
+  responses:
+    NotFound:
+      description: The referenced space or map was not found.
+    Forbidden:
+      description: The API key lacks permission on the target space.
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
   securitySchemes:
     apiKey:
       type: apiKey
