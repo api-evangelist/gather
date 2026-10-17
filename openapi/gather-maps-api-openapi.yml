@@ -80,6 +80,28 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
+  parameters:
+    SpaceId:
+      name: spaceId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: The space identifier (URL-encoded; contains a backslash-delimited id).
+    MapId:
+      name: mapId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: The map/room identifier within the space.
+  responses:
+    Forbidden:
+      description: The API key lacks permission on the target space.
+    BadRequest:
+      description: Malformed request (invalid body or parameters).
+    NotFound:
+      description: The referenced space or map was not found.
   schemas:
     Map:
       type: object
@@ -97,28 +119,6 @@ components:
             type: object
         collisions:
           type: string
-  parameters:
-    SpaceId:
-      name: spaceId
-      in: path
-      required: true
-      schema:
-        type: string
-      description: The space identifier (URL-encoded; contains a backslash-delimited id).
-    MapId:
-      name: mapId
-      in: path
-      required: true
-      schema:
-        type: string
-      description: The map/room identifier within the space.
-  responses:
-    NotFound:
-      description: The referenced space or map was not found.
-    Forbidden:
-      description: The API key lacks permission on the target space.
-    BadRequest:
-      description: Malformed request (invalid body or parameters).
   securitySchemes:
     apiKey:
       type: apiKey
