@@ -42,9 +42,27 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Slack app
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/1185922/grapevine/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - Grapevine
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: AI and Bots
 method: searched
 checked:
 - https://zapier.com/api/v4/apps/
 - slack/integrations/slack-integration-edges.yml
+- zendesk/integrations/zendesk-integration-edges.yml
 source:
 - https://zapier.com/api/v4/apps/
