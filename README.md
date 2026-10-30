@@ -64,6 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Gather is a company surfaced as a portfolio company of index-ventures, true-ventures and added to the API Evangelist network as a stub for enrichment. Sector: future-of-work. This profile is a lead awaiting the enrichment pipeline.
+Gather (gather.town) is a video-calling platform that places people in a navigable 2D virtual space, letting multiple groups hold separate conversations in parallel and walk in and out of them as easily as they would in real life. It is used for remote and hybrid offices, conferences, and events. Gather exposes a public HTTP API for programmatically creating spaces and reading/writing the map (room) data of a space, plus managing a space's email guestlist, and a realtime WebSocket "game" API (via the official @gathertown/gather-game-client SDK) for subscribing to player/movement/chat events and driving avatars or bots. API keys are generated at gather.town/apiKeys and require Admin or Builder permission on the target space. Gather was surfaced as a portfolio company of Index Ventures and True Ventures and enriched into the API Evangelist network.
 
-Backed by: index-ventures, true-ventures — https://gather.town/
+**Areas:** Company · Future Of Work · Virtual Office · Video Conferencing · Collaboration · Metaverse · Remote Work · Event
+
+## Gather on APIs.io
+
+Everything profiled for Gather is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/gather/](https://apis.io/providers/gather/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Gather Guestlist API](https://apis.io/apis/gather/gather-guestlist-api/) — Manage the email guestlist (members/guests) of a space
+- [Gather Maps API](https://apis.io/apis/gather/gather-maps-api/) — Read and write the map/room data of a space
+- [Gather Spaces API](https://apis.io/apis/gather/gather-spaces-api/) — Create and manage Gather spaces
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [gather](https://apis.io/servers/gather/gather/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Gather HTTP Guestlist API](https://apis.io/collections/gather/open-gather-guestlist-api/)
+- [Gather HTTP Guestlist Maps API](https://apis.io/collections/gather/open-gather-maps-api/)
+- [Gather HTTP Guestlist Spaces API](https://apis.io/collections/gather/open-gather-spaces-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Gather Http Api Overlay](https://apis.io/overlays/gather/gather-http-api-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Gather Authentication](https://apis.io/security/gather/gather-authentication/)
+- [Gather Domain Security](https://apis.io/security/gather/gather-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://gather.town/)
+- [Documentation](https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444)
+- [Getting started](https://github.com/gathertown/api-examples)
+- [API reference](https://gathertown.notion.site/Gather-HTTP-API-3bbf6c59325f40aca7ef5ce14c677444)
+- [Pricing](https://gather.town/pricing)
+- [Sign up](https://app.gather.town/signup)
+- [Support](https://support.gather.town/)
+- [Blog](https://gather.town/blog)
+- [Terms of service](https://gather.town/terms)
+- [Privacy policy](https://gather.town/privacy)
+- [GitHub](https://github.com/gathertown)
+- [Status](https://status.gather.town/)
+
+## API Evangelist rating
+
+**Kin Score 27.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 13.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 56.5 |
+| Access clarity | 10.5 |
+
+**Agent readiness 17.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/gather/](https://apis.io/providers/gather/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Gather: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/gather/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
